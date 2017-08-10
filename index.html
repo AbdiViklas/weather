@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Andy's Weather App</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <body>
+    <div class="container flow-text">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card blue-grey lighten-1">
+            <div class="card-content blue-grey-text text-lighten-5 center-align">
+              <div id="latLong">LOCATION: </div>
+              <div id="currentWeather">CONDITIONS: </div>
+              <div id="icon">
+                <canvas id="icon1" width="200" height="200"></canvas>
+              </div>
+              <div id="temperature"><span id="tempText"></span><span id="tempUnits">F</span></div>
+              <div>
+                <a class="waves-effect waves-light btn blue-grey lighten-4 blue-grey-text text-darken-2" id="FCButton">Switch C/F</a>
+              </div>
+              <div class="divider"></div>
+              <div class="center-align">
+                <a class="waves-effect waves-light btn blue-grey lighten-4 blue-grey-text text-darken-2 activator">credits</a>
+              </div>
+            </div>
+            <div class="card-reveal blue-grey darken-3 blue-grey-text text-lighten-5">
+              <span class="card-title">CREDITS<i class="material-icons right">close</i></span></span>
+              <p>By Andy Bonner, 2016</p>
+              <p>for <a href="https://www.freecodecamp.com/challenges/show-the-local-weather">FreeCodeCamp</a></p>
+              <p>Weather data is provided by the <a href="http://forecast.io/">Forecast.io</a> API, and the icons by their
+                <a
+                  href="https://darkskyapp.github.io/skycons/">"Skycons."</a> Layout and DOM manipulation use <a href="http://materializecss.com/">Materialize</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+  <script src='https://rawgithub.com/darkskyapp/skycons/master/skycons.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
